@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:src="@drawable/logintaxista"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linealogin"
+        android:paddingTop="50dp"
+        android:gravity="center_horizontal">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbackground"
+        android:textColor="@color/colorSecundary"
+        android:padding="5dp"
+        android:id="@+id/editcedula"
+        android:text="@string/prompt_cedula"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbackground"
+            android:textColor="@color/colorSecundary"
+            android:padding="5dp"
+            android:id="@+id/editcontrasena"
+            android:text="@string/prompt_password"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecundary"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/ingresar_primera_vez"
+            android:id="@+id/iracrear"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:text="@string/ingresar"
+            android:background="@drawable/alpha_black_button"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="110dp"
+            android:id="@+id/botoningresar"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lineacrear"
+        android:paddingTop="50dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbackground"
+            android:textColor="@color/colorSecundary"
+            android:padding="5dp"
+            android:id="@+id/editcrearcedula"
+            android:text="@string/prompt_cedula"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbackground"
+            android:textColor="@color/colorSecundary"
+            android:padding="5dp"
+            android:id="@+id/editcreartelefono"
+            android:text="@string/telefono"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecundary"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/ir_a_login"
+            android:id="@+id/iralogin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:text="@string/verificar"
+            android:background="@drawable/alpha_black_button"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="110dp"
+            android:id="@+id/botonverificar"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lineacontrasenas"
+        android:paddingTop="50dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbackground"
+            android:textColor="@color/colorSecundary"
+            android:padding="5dp"
+            android:id="@+id/editcontrasena1"
+            android:text="@string/prompt_password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbackground"
+            android:textColor="@color/colorSecundary"
+            android:padding="5dp"
+            android:id="@+id/editcontrasena2"
+            android:text="@string/repita_password"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:text="@string/verificar"
+            android:background="@drawable/alpha_black_button"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="110dp"
+            android:id="@+id/botoncrearcontrasena"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
